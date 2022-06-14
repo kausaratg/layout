@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+main{
+    display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 70%;
+    height: 70vh;
+    grid-template-areas: 
+    'a b c'
+    ;
+}
+main h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 1rem 1rem 2rem 0px;
+}
+main p{
+    line-height: 30px;
+    font-size: 15px;
+    margin-bottom: 2rem;
+}
+.sedan{
+    padding: 2rem;
+    background-color: orange;
+    grid-area: a;
+}
+.suv{
+    padding: 2rem;
+    background-color: rgb(7, 97, 113);
+    grid-area: b;
+}
+.luxury{
+    padding: 2rem;
+    background-color: rgb(2, 21, 2);
+    grid-area: c;
+}
+button{
+    margin-top: 40px;
+    height: 2rem;
+    width: 9rem;
+    border-radius: 15px;
+    font-weight: 900;
+}
+.sedan button{
+    color: orange;
+    border: 1px solid orange;
+}
+.suv button{
+    color: rgb(7, 97, 113);
+    border: 1px solid rgb(7, 97, 113);;
+}
+.luxury button{
+    color: rgb(2, 21, 2);
+    border: 1px solid rgb(2, 21, 2);
+}
